@@ -25,8 +25,9 @@ $config = [
 try {
 
     $twitter = new Hybridauth\Provider\Twitter($config)
-
+    
     $twitter->authenticate();
+    
     $accessToken = $twitter->getAccessToken();
     $userProfile = $twitter->getUserProfile();
     $apiResponse = $twitter->apiRequest('statuses/home_timeline.json');
@@ -53,7 +54,9 @@ To install Hybridauth we recommend Composer, the now defacto dependency manager 
 Versions Status
 
 Version	       Status	    Repository	  Documentation	  PHP Version
+
   2.x	     Maintenance	   v2	           v2	        >= 5.3
+  
   3.x	     Development	   v3	           v3	        >= 5.4
   
   
@@ -64,7 +67,7 @@ For general questions (i.e, "how-to" questions), please consider using StackOver
 
 License
 
-Hybridauth PHP Library is released under the terms of MIT License.
+    Hybridauth PHP Library is released under the terms of MIT License.
 
 
 For the full Copyright Notice and Disclaimer, see COPYING.md.
