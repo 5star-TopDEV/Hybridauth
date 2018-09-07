@@ -13,31 +13,25 @@ Usage
 Hybridauth provides a number of basic examples. You can also find complete Hybridauth documentation at https://hybridauth.github.io
 
 
-$config = [
-
-    'callback' => 'https://example.com/path/to/script.php',
-    
-    'keys' => [ 'key' => 'your-twitter-consumer-key', 'secret' => 'your-twitter-consumer-secret' ]
-    
-];
+    $config = [
+        'callback' => 'https://example.com/path/to/script.php',
+        'keys' => [ 'key' => 'your-twitter-consumer-key', 'secret' => 'your-twitter-consumer-secret' ]
+    ];
 
 
-try {
+    try {
+        $twitter = new Hybridauth\Provider\Twitter($config)
 
-    $twitter = new Hybridauth\Provider\Twitter($config)
-    
-    $twitter->authenticate();
-    
-    $accessToken = $twitter->getAccessToken();
-    $userProfile = $twitter->getUserProfile();
-    $apiResponse = $twitter->apiRequest('statuses/home_timeline.json');
-}
+        $twitter->authenticate();
 
-catch (\Exception $e) {
+        $accessToken = $twitter->getAccessToken();
+        $userProfile = $twitter->getUserProfile();
+        $apiResponse = $twitter->apiRequest('statuses/home_timeline.json');
+    }
 
-    echo 'Oops, we ran into an issue! ' . $e->getMessage();
-    
-}
+    catch (\Exception $e) {
+        echo 'Oops, we ran into an issue! ' . $e->getMessage();
+    }
 
 
 Requirements
@@ -53,11 +47,11 @@ To install Hybridauth we recommend Composer, the now defacto dependency manager 
 
 Versions Status
 
-Version	       Status	    Repository	  Documentation	  PHP Version
+    Version	       Status	    Repository	  Documentation	  PHP Version
 
-  2.x	     Maintenance	   v2	           v2	        >= 5.3
+      2.x	     Maintenance	   v2	           v2	        >= 5.3
   
-  3.x	     Development	   v3	           v3	        >= 5.4
+      3.x	     Development	   v3	           v3	        >= 5.4
   
   
 Questions, Help and Support?
@@ -67,7 +61,7 @@ For general questions (i.e, "how-to" questions), please consider using StackOver
 
 License
 
-    Hybridauth PHP Library is released under the terms of MIT License.
+Hybridauth PHP Library is released under the terms of MIT License.
 
 
 For the full Copyright Notice and Disclaimer, see COPYING.md.
