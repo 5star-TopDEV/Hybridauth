@@ -1,12 +1,12 @@
 Hybridauth 3.0-rc7
 
-Build Status Scrutinizer Code Quality Latest Stable Version Join the chat at https://gitter.im/hybridauth/hybridauth
 
 
 Hybridauth enables developers to easily build social applications and tools to engage websites visitors and customers on a social level that starts off with social sign-in and extends to social sharing, users profiles, friends lists, activities streams, status updates and more.
 
 
 The main goal of Hybridauth is to act as an abstract API between your application and the various social networks APIs and identities providers such as Facebook, Twitter and Google.
+
 
 Usage
 
@@ -34,6 +34,7 @@ Hybridauth provides a number of basic examples. You can also find complete Hybri
     }
 
 
+
 Requirements
 
 - PHP 5.4+
@@ -41,9 +42,11 @@ Requirements
 - PHP cURL
 
 
+
 Installation
 
 To install Hybridauth we recommend Composer, the now defacto dependency manager for PHP. Alternatively, you can download and use the latest release available at Github.
+
 
 Versions Status
 
@@ -57,6 +60,7 @@ Versions Status
 Questions, Help and Support?
 
 For general questions (i.e, "how-to" questions), please consider using StackOverflow instead of the Github issues tracker. For convenience, we also have a [low-activity] Gitter channel if you want to get help directly from the community.
+
 
 
 License
